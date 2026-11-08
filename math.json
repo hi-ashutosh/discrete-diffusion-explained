@@ -1,0 +1,182 @@
+{
+  "display-1": {
+    "tex": "q_a(x\\mid z)=\\prod_{i=1}^{64}\\left[\\frac{1-a}{2}+a\\,\\mathbf{1}_{\\{x_i=z_i\\}}\\right]",
+    "display": true
+  },
+  "display-2": {
+    "tex": "p_a(x)=\\sum_z p_{\\mathrm{data}}(z)\\,q_a(x\\mid z)",
+    "display": true
+  },
+  "display-3": {
+    "tex": "p(z\\mid x,a)\\propto p_{\\mathrm{data}}(z)\\,q_a(x\\mid z)",
+    "display": true
+  },
+  "display-4": {
+    "tex": "p(y\\mid x,k)=\\sum_z p(z\\mid x,k)\\,q(y\\mid x,z,k)",
+    "display": true
+  },
+  "display-5": {
+    "tex": "q(y\\mid x,z,k)=\\frac{q(x\\mid y,k)\\,q(y\\mid z,k-1)}{q(x\\mid z,k)}",
+    "display": true
+  },
+  "display-6": {
+    "tex": "Q_k=(1-\\beta_k)I+\\frac{\\beta_k}{2}\\,\\mathbf{1}\\mathbf{1}^{\\mathsf T}",
+    "display": true
+  },
+  "display-7": {
+    "tex": "q(x_k\\mid z)=\\prod_{i=1}^{4}\\left[\\bar\\alpha_k\\,\\mathbf{1}_{\\{x_{k,i}=z_i\\}}+\\frac{1-\\bar\\alpha_k}{2}\\right]",
+    "display": true
+  },
+  "display-8": {
+    "tex": "\\bar\\alpha_k=\\prod_{j=1}^{k}(1-\\beta_j)=1-\\frac{k}{T}",
+    "display": true
+  },
+  "display-9": {
+    "tex": "q(y\\mid x,z)=\\frac{q(x\\mid y)\\,q(y\\mid z)}{q(x\\mid z)}",
+    "display": true
+  },
+  "display-10": {
+    "tex": "p_\\theta(y\\mid x,k)=\\sum_z d_\\theta(z\\mid x,k)\\,q(y\\mid x,z)",
+    "display": true
+  },
+  "display-11": {
+    "tex": "\\mathcal{L}_{\\mathrm{CE}}(\\theta)=\\mathbb{E}_{k,Z,X_k}\\!\\left[-\\log d_\\theta(Z\\mid X_k,k)\\right]",
+    "display": true
+  },
+  "display-12": {
+    "tex": "\\begin{aligned}&\\mathbb{E}\\!\\left[\\left\\lVert f_\\theta(X)-U(X,Z)\\right\\rVert^2\\right]\\\\[6pt]&\\quad=\\mathbb{E}\\!\\left[\\left\\lVert f_\\theta(X)-u(X)\\right\\rVert^2\\right]\\\\[6pt]&\\qquad+\\mathbb{E}\\!\\left[\\left\\lVert U(X,Z)-u(X)\\right\\rVert^2\\right]\\end{aligned}",
+    "display": true
+  },
+  "display-13": {
+    "tex": "\\begin{aligned}&\\mathbb{E}_{Z,X}\\!\\left[-\\log d_\\theta(Z\\mid X)\\right]\\\\[6pt]&\\quad=\\mathbb{E}_X\\!\\left[H\\bigl(p(Z\\mid X)\\bigr)\\right]\\\\[6pt]&\\qquad+\\mathbb{E}_X\\!\\left[\\operatorname{KL}\\!\\left(p(Z\\mid X)\\,\\middle\\|\\,d_\\theta(Z\\mid X)\\right)\\right]\\end{aligned}",
+    "display": true
+  },
+  "inline-14": {
+    "tex": "z",
+    "display": false
+  },
+  "inline-15": {
+    "tex": "a",
+    "display": false
+  },
+  "inline-16": {
+    "tex": "a=\\kappa(t)",
+    "display": false
+  },
+  "inline-17": {
+    "tex": "a=\\bar\\alpha_k=1-k/T",
+    "display": false
+  },
+  "inline-18": {
+    "tex": "\\kappa",
+    "display": false
+  },
+  "inline-19": {
+    "tex": "\\bar\\alpha",
+    "display": false
+  },
+  "inline-20": {
+    "tex": "k=0",
+    "display": false
+  },
+  "inline-21": {
+    "tex": "k=T",
+    "display": false
+  },
+  "inline-22": {
+    "tex": "k",
+    "display": false
+  },
+  "inline-23": {
+    "tex": "1-\\beta_k",
+    "display": false
+  },
+  "inline-24": {
+    "tex": "\\beta_k=1/(T-k+1)",
+    "display": false
+  },
+  "inline-25": {
+    "tex": "\\beta_T=1",
+    "display": false
+  },
+  "inline-26": {
+    "tex": "d_\\theta(z\\mid x,k)=p(z\\mid x,k)",
+    "display": false
+  },
+  "inline-27": {
+    "tex": "p(y\\mid x,k)",
+    "display": false
+  },
+  "inline-28": {
+    "tex": "p_{\\mathrm{data}}",
+    "display": false
+  },
+  "inline-29": {
+    "tex": "k=0",
+    "display": false
+  },
+  "inline-30": {
+    "tex": "Z",
+    "display": false
+  },
+  "inline-31": {
+    "tex": "k",
+    "display": false
+  },
+  "inline-32": {
+    "tex": "X_k",
+    "display": false
+  },
+  "inline-33": {
+    "tex": "Z",
+    "display": false
+  },
+  "inline-34": {
+    "tex": "Z",
+    "display": false
+  },
+  "inline-35": {
+    "tex": "Z",
+    "display": false
+  },
+  "inline-36": {
+    "tex": "X",
+    "display": false
+  },
+  "inline-37": {
+    "tex": "U(X,Z)",
+    "display": false
+  },
+  "inline-38": {
+    "tex": "Z",
+    "display": false
+  },
+  "inline-39": {
+    "tex": "u(X)=\\mathbb{E}[U(X,Z)\\mid X]",
+    "display": false
+  },
+  "inline-40": {
+    "tex": "\\mathbb{E}[U-u\\mid X]=0",
+    "display": false
+  },
+  "inline-41": {
+    "tex": "\\theta",
+    "display": false
+  },
+  "inline-42": {
+    "tex": "\\theta",
+    "display": false
+  },
+  "inline-43": {
+    "tex": "\\theta",
+    "display": false
+  },
+  "inline-44": {
+    "tex": "\\kappa(t)=t",
+    "display": false
+  },
+  "inline-45": {
+    "tex": "2^{64}",
+    "display": false
+  }
+}
